@@ -17,7 +17,6 @@ else:
 {.pragma: libchampgtk, cdecl, dynlib: LIB_CHAMP_GTK.}
 
 import oldgtk3/[gobject, glib, cairo, pango, gtk]
-import semver
 import clutter
 
 const
@@ -25,8 +24,6 @@ const
   CHAMPLAIN_MAX_LATITUDE* = 85.0511287798
   CHAMPLAIN_MIN_LONGITUDE* = -180.0
   CHAMPLAIN_MAX_LONGITUDE* = 180.0
-  CHAMPLAIN_VERSION* = newVersion(0,12,17)
-  CHAMPLAIN_VERSION_S* = "0.12.17"
   CHAMPLAIN_VERSION_HEX* = ((CHAMPLAIN_VERSION.major shl 24) or
       (CHAMPLAIN_VERSION.minor shl 16) or (CHAMPLAIN_VERSION.patch shl 8))
 

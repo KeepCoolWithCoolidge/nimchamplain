@@ -11,7 +11,6 @@ srcDir        = "src"
 requires "nim >= 0.18.0"
 requires "nimclutter >= 0.1.0"
 requires "oldgtk3"
-requires "semver"
 
 import distros
 
